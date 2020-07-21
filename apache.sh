@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "how to install httpd with shell script"
-yum install httpd -y
-systemctl start httpd
-echo "hii this is test" > /var/www/html/index.html
-firewall-cmd --permanent --add-service=http
-frewall-cmd --reload
+sudo echo "how to install httpd with shell script"
+sudo yum install httpd -y
+sudo systemctl start httpd
+sudo echo "hii this is test" > /var/www/html/index.html
+sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --reload
 
